@@ -9,7 +9,7 @@ app.post("/ask", async (req, res) => {
   if (!userMsg) return res.json({ reply: "I need something to respond to!" });
 
   try {
-    const response = await fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=YOUR_GEMINI_API_KEY", {
+    const response = await fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyDqv7jLtHx1QGSGSaMhBpfaBNaIQZTOfVs", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
